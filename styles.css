@@ -141,7 +141,7 @@ dialog p { font-size: 13px; }
 .dialog-info { background: var(--mint); padding: 15px; border-radius: 8px; }
 dialog .button { width: 100%; margin-top: 10px; }
 .staff { background: #fafcf8; }
-.staff-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.staff-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 900px; }
 .staff-card { display: flex; gap: 18px; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 24px 22px; }
 .staff-avatar { flex-shrink: 0; display: grid; place-items: center; width: 72px; height: 72px; border-radius: 50%; background: var(--tint); color: var(--green); font: 700 26px/1 Arial,sans-serif; border: 1px solid var(--line); }
 .staff-body { flex: 1; min-width: 0; display: flex; flex-direction: column; }
