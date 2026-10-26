@@ -1,0 +1,7 @@
+{
+  "name": "yohaku-housekeeping-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "家事代行サービスの軽量なトップページデモ",
+  "scripts": { "dev": "python3 -m http.server 4173 --bind 127.0.0.1" }
+}
