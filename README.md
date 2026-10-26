@@ -1,6 +1,6 @@
 # 余白｜家事代行サービス トップページ
 
-小規模な家事代行事業を想定した、静的なトップページの制作デモです。HTML・CSS・JavaScriptとローカルSVGのみで構成し、ビルドやパッケージのインストールは不要です。
+小規模な家事代行事業を想定した、静的なトップページの制作デモです。HTML・CSS・JavaScriptとローカル画像で構成し、ビルドやパッケージのインストールは不要です。
 
 ## プレビュー
 
@@ -15,7 +15,7 @@ Python 3 が必要です。起動後、 http://127.0.0.1:4173 を開きます。
 - スマートフォン・PC対応のトップページ
 - サービス紹介（掃除・洗濯・片付け・料理）、単発／定期の参考料金、利用の流れ
 - 開閉式FAQ、モバイルメニュー、プランに応じた相談案内ダイアログ
-- オリジナルのSVGイラストとロゴ。外部フォント・画像・解析・ライブラリへの通信なし
+- オリジナルのAI生成写真（WebP圧縮）とSVGロゴ・アイコン。外部フォント・画像・解析・ライブラリへの通信なし
 - 制作デモ表示と検索エンジン向け noindex
 
 ## 公開前に確定すること
@@ -39,3 +39,19 @@ Python 3 が必要です。起動後、 http://127.0.0.1:4173 を開きます。
 - `styles.css`: レイアウト・レスポンシブ対応
 - `script.js`: メニュー・相談案内
 - `assets/`: 自作SVG
+
+## 2026-10-27 デザイン更新
+
+写真中心のファーストビュー、明るいグリーンと白、コーラル色の丸い相談ボタン、円形のサービス案内、料金帯、スマートフォン用固定相談ボタンに更新しました。
+
+参考サイト（デザイン構成を参照し、画像・ロゴ・コピーは転載していません）:
+- https://lp.taskaji.jp/lp1
+- https://30min.page/lp
+- https://user.support.kirari.co.jp/
+- https://www.happy-bears.com/kaji/price/
+
+### 写真の出典
+
+`assets/housekeeping-hero.webp` は組み込み image_gen ツールで作成し、WebPに圧縮したオリジナル素材です。実在のスタッフの写真ではありません。使用した最終プロンプト:
+
+> Use case: photorealistic-natural. Asset type: Japanese housekeeping service landing page hero photograph, wide landscape 3:2. A friendly Japanese adult female professional housekeeper in a light sage green apron over white shirt, naturally smiling while wiping a sparkling white kitchen counter with a cloth. Bright realistic Japanese modern family apartment, white cabinetry, soft light oak details, small houseplant. Composition: woman occupies right half, medium waist-up view, realistic hands actively cleaning, left half mostly softly sunlit kitchen with space for web text (do not add text). Warm authentic daylight, airy white and fresh green palette, premium approachable commercial lifestyle photography, not illustration. No words, no logos, no watermark. Fictional model, not a real employee.
