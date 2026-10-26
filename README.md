@@ -28,10 +28,36 @@ Python 3 が必要です。起動後、 http://127.0.0.1:4173 を開きます。
 
 「余白」は仮称です。価格、最低利用時間、交通費、サービス内容、対応エリア、営業時間、キャンセル規定はデモの設定で、実事業の条件ではありません。実績・口コミ・資格・保険加入など、未確認の実績や保証は掲載していません。
 
-相談ボタンは案内表示のみです。個人情報の収集・送信、予約確定、オンライン決済、LINE／L Messageの実接続はありません。正式なLINE導線を接続する場合は `script.js` の相談処理を実URLへの遷移に変更してください。正式公開時は運営者情報・必要な規約等を整え、noindex を見直してください。
+相談ボタンは、`script.js` 冒頭の `LME_BOOKING_URL` が空のあいだはデモ案内を表示します。L Message（エルメ）の管理画面「カレンダー予約」で発行した予約ページURL（`https://` で始まるもの）を入れると、相談ダイアログに「LINEで予約・相談する」ボタンが出て、LINEの予約カレンダーへ進めます。サイト側で個人情報の収集・送信やオンライン決済は行いません。正式公開時は運営者情報・必要な規約等を整え、noindex を見直してください。
 
 ## サービス構成の調査
 
 2026年10月27日に以下の公式情報を参照。日常家事、単発と定期、相談から利用につなげる構成の参考にし、文面・画像は独自に作成しています。掲載価格は競合の価格の転載ではなく、デモ用の仮設定です。
 
-- CaSy 定期サービス: https://casy.co.jp/ser
+- CaSy 定期サービス: https://casy.co.jp/service/subscription
+- CaSy 掃除代行: https://casy.co.jp/service/cleaning
+- CaSy 料理代行: https://casy.co.jp/service/cooking/
+- ベアーズ スポットサービス: https://www.happy-bears.com/kaji/spot/
+
+## ファイル
+
+- `index.html`: ページ内容
+- `styles.css`: レイアウト・レスポンシブ対応
+- `script.js`: メニュー・相談案内
+- `assets/`: 自作SVG
+
+## 2026-10-27 デザイン更新
+
+写真中心のファーストビュー、明るいグリーンと白、コーラル色の丸い相談ボタン、円形のサービス案内、料金帯、スマートフォン用固定相談ボタンに更新しました。
+
+参考サイト（デザイン構成を参照し、画像・ロゴ・コピーは転載していません）:
+- https://lp.taskaji.jp/lp1
+- https://30min.page/lp
+- https://user.support.kirari.co.jp/
+- https://www.happy-bears.com/kaji/price/
+
+### 写真の出典
+
+`assets/housekeeping-hero.webp` は組み込み image_gen ツールで作成し、WebPに圧縮したオリジナル素材です。実在のスタッフの写真ではありません。使用した最終プロンプト:
+
+> Use case: photorealistic-natural. Asset type: Japanese housekeeping service landing page hero photograph, wide landscape 3:2. A friendly Japanese adult female professional housekeeper in a light sage green apron over white shirt, naturally smiling while wiping a sparkling white kitchen counter with a cloth. Bright realistic Japanese modern family apartment, white cabinetry, soft light oak details, small houseplant. Composition: woman occupies right half, medium waist-up view, realistic hands actively cleaning, left half mostly softly sunlit kitchen with space for web text (do not add text). Warm authentic daylight, airy white and fresh green palette, premium approachable commercial lifestyle photography, not illustration. No words, no logos, no watermark. Fictional model, not a real employee.

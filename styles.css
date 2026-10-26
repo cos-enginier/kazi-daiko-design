@@ -280,3 +280,7 @@ dialog .button { width: 100%; margin-top: 10px; }
   html { scroll-behavior: auto; }
   *, *:before, *:after { transition: none !important; }
 }
+.dialog-live small { display: block; font-size: 11px; color: var(--muted); margin-top: 14px; }
+.line-button { width: 100%; margin-top: 8px; background: #06c755; box-shadow: 0 4px 0 #04a045; }
+.line-button:hover { background: #05b34c; }
+[hidden] { display: none !important; }
