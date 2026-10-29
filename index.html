@@ -9,16 +9,16 @@
   <title>余白｜暮らしに、ひと息つく時間を。</title>
   <link rel="icon" href="assets/mark.svg?v=3" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <script src="script.js?v=reserva1" defer></script>
 </head>
 <body>
-  <div class="demo-bar">DESIGN PREVIEW <span>このサイトは制作デモです。名称・料金・サービス内容は仮の設定です。</span></div>
+  <div class="demo-bar">DESIGN PREVIEW <span>このサイトは制作デモです。名称・料金・サービス内容は仮の設定です。予約ボタンからテスト予約を試せます。</span></div>
   <header class="header wrap">
     <a class="brand" href="#" aria-label="余白 トップ"><img src="assets/mark.svg?v=3" width="39" height="39" alt=""><span>余白<small>暮らしに寄り添う家事代行</small></span></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="メニューを開く"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
     <nav id="navigation" aria-label="メインナビゲーション">
       <a href="#service">できること</a><a href="#staff">スタッフ紹介</a><a href="#plans">料金プラン</a><a href="#flow">ご利用の流れ</a><a href="#faq">よくあるご質問</a>
-      <button class="button small" data-consult="まずは相談したい">気軽に相談する <span>›</span></button>
+      <a class="button small" href="https://reserva.be/yohaku_staff_test/reserve?mode=service_staff&amp;search_evt_no=3beJwzs7QwNjIGAAR3AUA">空き状況・予約 <span>›</span></a>
     </nav>
   </header>
   <main>
@@ -29,7 +29,7 @@
           <h1 id="hero-title">家事は、頼っていい。<br><span>毎日に、ゆとりを。</span></h1>
           <p class="hero-description">忙しいあなたの暮らしに、家事のお手伝い。<br>いつもの家事から、気軽にご相談ください。</p>
           <div class="hero-points"><span>お掃除から<br><b>お料理まで</b></span><span>必要なときに<br><b>1回から相談</b></span><span>暮らしに合う<br><b>定期プランも</b></span></div>
-          <div class="hero-action"><p>まずは、あなたのお困りごとをお聞かせください</p><button class="button" data-consult="はじめての利用を相談したい">家事のお手伝いを相談する <span>›</span></button><small>ご相談後に、内容・料金をご案内します</small></div>
+          <div class="hero-action"><p>まずは、あなたのお困りごとをお聞かせください</p><a class="button" href="https://reserva.be/yohaku_staff_test/reserve?mode=service_staff&amp;search_evt_no=3beJwzs7QwNjIGAAR3AUA">テスト予約を試してみる <span>›</span></a><small>RESERVAでスタッフと空き日時を選べます（テスト用）</small></div>
         </div>
         <div class="hero-art"><img src="assets/housekeeping-hero.webp" width="1536" height="1024" alt="明るいキッチンでカウンターを拭く家事代行スタッフのイメージ"><span class="photo-label">スタッフのイメージ / AI生成</span><div class="photo-message">家がきれい。<br>それだけで、<br><b>今日はちょっといい日。</b></div></div>
       </div>
@@ -46,20 +46,19 @@
     </div></section>
     <section id="staff" class="staff section-pad"><div class="wrap">
       <div class="section-heading"><div><p class="eyebrow">OUR STAFF</p><h2>スタッフを選んで、指名予約</h2></div><p>得意な家事や人柄を見て、<br>お願いしたいスタッフを選べます。</p></div>
-      <div class="staff-grid"><article class="staff-card"><div class="staff-avatar" style="--tint:#e9f3ea" aria-hidden="true">S</div><div class="staff-body"><p class="staff-role">お掃除・お片付け</p><h3>さくら<small>スタッフ</small></h3><p>水まわりの掃除が得意です。キッチンや浴室を、気持ちよく使える状態に整えます。</p><div class="tags"><span>キッチン</span><span>浴室・トイレ</span><span>整理収納</span></div><button class="button outline small staff-book" data-consult="さくらさんを指名して予約したい" data-staff="さくら">さくらさんを指名して予約 <span>›</span></button></div></article><article class="staff-card"><div class="staff-avatar" style="--tint:#fff2d6" aria-hidden="true">M</div><div class="staff-body"><p class="staff-role">お料理・作り置き</p><h3>みどり<small>スタッフ</small></h3><p>和食中心の作り置きが得意です。ご家族の好みや量に合わせてご相談ください。</p><div class="tags"><span>作り置き</span><span>日々のごはん</span><span>調理後の片付け</span></div><button class="button outline small staff-book" data-consult="みどりさんを指名して予約したい" data-staff="みどり">みどりさんを指名して予約 <span>›</span></button></div></article></div>
-      <p class="section-note">※スタッフは架空のデモです（予約画面のスタッフ名と同じです）。予約画面（LINE）でスタッフと空き日時を選ぶと、予約が自動で反映され、同じ時間の二重予約は受け付けません。</p>
+      <div class="staff-grid"><article class="staff-card"><div class="staff-avatar" style="--tint:#e9f3ea" aria-hidden="true">S</div><div class="staff-body"><p class="staff-role">お掃除・お片付け</p><h3>さくら<small>スタッフ</small></h3><p>水まわりの掃除が得意です。キッチンや浴室を、気持ちよく使える状態に整えます。</p><div class="tags"><span>キッチン</span><span>浴室・トイレ</span><span>整理収納</span></div><a class="button outline small staff-book" href="https://reserva.be/yohaku_staff_test/reserve?mode=service_staff&amp;search_evt_no=3beJwzs7QwNjIGAAR3AUA">スタッフを選んで予約 <span>›</span></a></div></article><article class="staff-card"><div class="staff-avatar" style="--tint:#fff2d6" aria-hidden="true">M</div><div class="staff-body"><p class="staff-role">お料理・作り置き</p><h3>みどり<small>スタッフ</small></h3><p>和食中心の作り置きが得意です。ご家族の好みや量に合わせてご相談ください。</p><div class="tags"><span>作り置き</span><span>日々のごはん</span><span>調理後の片付け</span></div><a class="button outline small staff-book" href="https://reserva.be/yohaku_staff_test/reserve?mode=service_staff&amp;search_evt_no=3beJwzs7QwNjIGAAR3AUA">スタッフを選んで予約 <span>›</span></a></div></article></div>
+      <p class="section-note">※紹介スタッフは架空のデモです。RESERVAのテスト予約画面では「テストスタッフA〜E」から担当者と空き日時を選べます。予約は動作確認専用で、実際の訪問・サービス提供はありません。</p>
     </div></section>
     <section id="plans" class="plans section-pad wrap"><div class="section-heading"><div><p class="eyebrow">SIMPLE PLANS</p><h2>選べる、2つの料金プラン</h2></div><p>まずは一度。気に入ったら、定期的に。<br>無理のないペースで始めましょう。</p></div>
-      <div class="plan-grid"><article class="plan"><span class="plan-label">必要なときだけ</span><h3>スポットプラン</h3><p>忙しい週や、来客前のお掃除に。</p><p class="price">3,500<span>円 / 時間（税込）</span></p><p class="plan-detail">1回2時間から ／ 交通費は別途お見積もり</p><button class="button outline" data-consult="スポットプランを相談したい">スポット利用を相談する <span>↗</span></button></article>
-      <article class="plan featured"><span class="plan-label">いつもの暮らしをサポート</span><h3>定期プラン</h3><p>週1回や隔週など、ご希望のペースで。</p><p class="price">3,000<span>円 / 時間（税込）</span></p><p class="plan-detail">1回2時間から ／ 交通費は別途お見積もり</p><button class="button" data-consult="定期プランを相談したい">定期利用を相談する <span>↗</span></button></article></div><div class="plan-dots" aria-hidden="true"><span class="is-active"></span><span></span></div><p class="swipe-hint" aria-hidden="true">← 左右にスワイプして比べられます →</p>
+      <div class="plan-grid"><article class="plan"><span class="plan-label">必要なときだけ</span><h3>スポットプラン</h3><p>忙しい週や、来客前のお掃除に。</p><p class="price">3,500<span>円 / 時間（税込）</span></p><p class="plan-detail">1回2時間から ／ 交通費は別途お見積もり</p><a class="button outline" href="https://reserva.be/yohaku_staff_test/reserve?mode=service_staff&amp;search_evt_no=3beJwzs7QwNjIGAAR3AUA">スポットの予約を試す <span>↗</span></a></article>
+      <article class="plan featured"><span class="plan-label">いつもの暮らしをサポート</span><h3>定期プラン</h3><p>週1回や隔週など、ご希望のペースで。</p><p class="price">3,000<span>円 / 時間（税込）</span></p><p class="plan-detail">1回2時間から ／ 交通費は別途お見積もり</p><a class="button" href="https://reserva.be/yohaku_staff_test/reserve?mode=service_staff&amp;search_evt_no=3beJwzs7QwNjIGAAR3AUA">定期の予約を試す <span>↗</span></a></article></div><div class="plan-dots" aria-hidden="true"><span class="is-active"></span><span></span></div><p class="swipe-hint" aria-hidden="true">← 左右にスワイプして比べられます →</p>
       <p class="section-note">※上記はサイトデモ用の参考料金です。実際の料金・最低利用時間・交通費・キャンセル条件は未確定です。</p>
     </section>
     <section id="flow" class="flow section-pad"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">HOW IT WORKS</p><h2>かんたん3ステップでご利用</h2></div></div><ol class="steps"><li><span>01 / CONTACT</span><h3>気軽に相談</h3><p>お願いしたい家事や、気になることをお聞かせください。</p></li><li><span>02 / PLANNING</span><h3>内容・日程を確認</h3><p>ご希望の内容と日時を伺い、料金や対応範囲をご案内します。</p></li><li><span>03 / SERVICE</span><h3>お手伝いスタート</h3><p>内容にご納得いただいてから、ご自宅でのお手伝いへ。</p></li></ol></div></section>
-    <section id="faq" class="faq section-pad wrap"><div><p class="eyebrow">QUESTIONS & ANSWERS</p><h2>よくあるご質問</h2><p>はじめての方も、<br>お気軽にご相談ください。</p></div><div class="questions"><details><summary>どんな家事をお願いできますか？</summary><p>掃除・洗濯・日常の片付け・料理などを想定しています。具体的な対応範囲は、事前のご相談で確認します。</p></details><details><summary>一度だけでも利用できますか？</summary><p>単発のスポットプランを想定しています。忙しい時期や来客前など、必要なときにご相談いただける構成です。</p></details><details><summary>掃除道具は用意が必要ですか？</summary><p>一般的な家事代行では、ご家庭の掃除用具・洗剤を使用する場合があります。必要な準備は、サービス内容に合わせて事前にご案内する想定です。</p></details><details><summary>対応エリアや予約方法を教えてください。</summary><p>対応エリア・営業時間・予約方法は現在未設定です。正式公開時にご案内します。このデモから予約やお問い合わせの送信はできません。</p></details></div></section>
-    <section class="contact wrap"><p class="eyebrow">MAKE ROOM FOR YOURSELF</p><h2>あなたの毎日に、<br>ちょうどいい余白を。</h2><p>「こんなこと、頼んでいいのかな？」からで大丈夫。</p><button class="button" data-consult="サービスについて相談したい">まずは気軽に相談する <span>›</span></button><small>ご希望を伺ってから、内容とお見積もりをご案内します。</small></section>
+    <section id="faq" class="faq section-pad wrap"><div><p class="eyebrow">QUESTIONS & ANSWERS</p><h2>よくあるご質問</h2><p>はじめての方も、<br>お気軽にご相談ください。</p></div><div class="questions"><details><summary>どんな家事をお願いできますか？</summary><p>掃除・洗濯・日常の片付け・料理などを想定しています。具体的な対応範囲は、事前のご相談で確認します。</p></details><details><summary>一度だけでも利用できますか？</summary><p>単発のスポットプランを想定しています。忙しい時期や来客前など、必要なときにご相談いただける構成です。</p></details><details><summary>掃除道具は用意が必要ですか？</summary><p>一般的な家事代行では、ご家庭の掃除用具・洗剤を使用する場合があります。必要な準備は、サービス内容に合わせて事前にご案内する想定です。</p></details><details><summary>対応エリアや予約方法を教えてください。</summary><p>現在は動作確認用です。予約ボタンからRESERVAを開き、スタッフと空き日時を選んでテスト予約できます。予約画面の50円は仮の表示で、実際の訪問・サービス提供・決済は行いません。対応エリアや正式な営業条件は公開時にご案内します。</p></details></div></section>
+    <section class="contact wrap"><p class="eyebrow">MAKE ROOM FOR YOURSELF</p><h2>あなたの毎日に、<br>ちょうどいい余白を。</h2><p>「こんなこと、頼んでいいのかな？」からで大丈夫。</p><a class="button" href="https://reserva.be/yohaku_staff_test/reserve?mode=service_staff&amp;search_evt_no=3beJwzs7QwNjIGAAR3AUA">テスト予約を試してみる <span>›</span></a><small>動作確認専用です。実際の訪問・サービス提供はありません。</small></section>
   </main>
-  <aside class="mobile-cta" aria-label="ご相談"><span>はじめての方もお気軽に</span><button class="button" data-consult="サービスについて相談したい">相談してみる <span>›</span></button></aside>
+  <aside class="mobile-cta" aria-label="テスト予約"><span>はじめての方もお気軽に</span><a class="button" href="https://reserva.be/yohaku_staff_test/reserve?mode=service_staff&amp;search_evt_no=3beJwzs7QwNjIGAAR3AUA">空き状況・予約 <span>›</span></a></aside>
   <footer class="footer wrap"><a class="brand" href="#"><img src="assets/mark.svg?v=3" width="34" height="34" alt=""><span>余白<small>暮らしに寄り添う家事代行</small></span></a><p>暮らしに、ひと息つく時間を。</p><small>© YOHAKU — Concept website / 制作デモ</small></footer>
-  <dialog id="consult-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="閉じる">×</button><p class="eyebrow">THANK YOU FOR YOUR INTEREST</p><h2 id="dialog-title">ご相談について</h2><p id="selected-plan"></p><p id="selected-staff" class="dialog-staff" hidden></p><div class="dialog-live" hidden><p>LINEで空き日時をえらんで、そのままご予約・ご相談いただけます。</p><a class="button line-button" id="lme-booking-link" href="#" target="_blank" rel="noopener">LINEで予約・相談する <span>↗</span></a><small>スマートフォンではLINEが開きます。パソコンではQRコードが表示されるので、スマートフォンで読み取ってください。</small></div><div class="dialog-demo"><p>こちらは制作デモのため、<br>お問い合わせ・予約はまだ受け付けていません。</p><p class="dialog-info">正式公開時に、LINE公式アカウント・L Messageへの相談導線を設定する想定です。</p><button class="button dialog-done">ページに戻る <span>↗</span></button></div></dialog>
 </body>
 </html>
